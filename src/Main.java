@@ -56,6 +56,7 @@ public class Main {
                 default:
                     System.out.println(scanner.nextLine() + " is not an option please type in a valid option");
             }
+            System.out.println("List:");
             ListFridgeItems();
         }
     }
@@ -119,7 +120,7 @@ public class Main {
                     //Ich lösche das erste Objekt, was eigentlich auch das älteste seien sollte aber das muss nicht immer der Fall sein. (mit tmp[] könnte man es lösen)
 
                     fridge.remove(n);
-                    break;
+                    break; //Import cause otherwise it deletes the wrong object
                 }
                 n++;
             }
